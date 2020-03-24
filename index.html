@@ -4,89 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Kozlov M.N.</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <div>
+    <div class="wrapper">
       <!-- Aside container -->
-      <aside>
-        <img src="./img/foto.png" alt="My foto" />
-
+      <aside class="sidebar">
+        <div class="img-box">
+          <img src="./img/foto.png" alt="My foto" width="280"/>
+        </div>
+        
         <!-- Contacts container -->
-        <div>
-          <h3>Contacts</h3>
-          <ul>
-            <li>
-              C: <a href="tel:380979769625" title="to call">+38 097 976 96 25</a>
+        <div class="sidebar-container-item">
+          <h3 class="sidebar-title">Contacts</h3>
+          <ul class="contakt-container">
+            <li class="contact-item">
+              <span>C:</span> <a href="tel:380979769625" title="to call" class="contacts-link link-underline">+38 097 976 96 25</a>
             </li>
-            <li>
-              E: <a href="mailto:maximusvin@gmail.com">maximusvin@gmail.com</a>
+            <li class="contact-item">
+              <span>E:</span> <a href="mailto:maximusvin@gmail.com" class="contacts-link">maximusvin@gmail.com</a>
             </li>
           </ul>
         </div>
 
         <!-- Tech Skills container -->
-        <div>          
-          <h3>Tech Skills</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3 </li>
-            <li>GIT</li>
-            <li>WebPack</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
+        <div class="sidebar-container-item">          
+          <h3 class="sidebar-title">Tech Skills</h3>
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item"><span>HTML5</span></li>
+            <li class="sidebar-list-item"><span>CSS3</span></li>
+            <li class="sidebar-list-item"><span>GIT</span></li>
+            <li class="sidebar-list-item"><span>WebPack</span></li>
+            <li class="sidebar-list-item"><span>JavaScript</span></li>
+            <li class="sidebar-list-item"><span>React.js</span></li>
+            <li class="sidebar-list-item"><span>Node.js</span></li>
           </ul>
         </div>
 
         <!-- Soft Skills container -->
-        <div>
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Scrum</li>
-            <li>Agile</li>
-            <li>GTD</li>
-            <li>Teamwork</li>           
+        <div class="sidebar-container-item">
+          <h3 class="sidebar-title">Soft Skills</h3>
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item"><span>Scrum</span></li>
+            <li class="sidebar-list-item"><span>Agile</span></li>
+            <li class="sidebar-list-item"><span>GTD</span></li>
+            <li class="sidebar-list-item"><span>Teamwork</span></li>           
           </ul>
         </div>
       </aside>
 
       <!-- About me conteiner -->
-      <div>
+      <div class="container-about-me">
         <div>
-          <h2>Front-End Developer</h2>
-          <h1>Maxim Kozlov</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+          <p class="subtitle">Front-End Developer</p>
+          <h1>Maxim Kozlov</h1>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
         </div>
 
         <!-- Projects container -->
         <div>
-          <h3>Projects</h3>
-          <ol>
-            <li>
-              <a href="#">https://lovecamp.allinsol.com/</a>
-              <span>[ HTML5, CSS3 ]</span>
+          <h3 class="main-title">Projects</h3>
+          <ol class="main-list">
+            <li class="main-list-item">
+              <span class="main-list-link"><a href="#">https://lovecamp.allinsol.com/</a>
+              ...........................
+              </span>
+              [<span class="main-list-link">HTML5, CSS3 </span> ]
             </li>
-            <li>
-              <a href="#">https://cryptohub.goit.ua/</a>
-              <span>[ JavaScript ]</span>
+            <li class="main-list-item">
+              <span class="main-list-link"><a href="#">https://cryptohub.goit.ua/</a>
+              ......................................
+              </span>
+              [<span class="main-list-link">JavaScript</span> ]
             </li>
-            <li>
-              <a href="#">https://kidslike.goit.co.ua/</a>
-              <span>[ React.js, Node.js ]</span>
+            <li class="main-list-item">
+              <span class="main-list-link"><a href="#">https://kidslike.goit.co.ua/</a>
+              ......................................
+              </span>
+              [<span class="main-list-link">React.js, Node.js</span> ]
             </li>
           </ol>
         </div>
 
         <!-- Experience container -->
         <div>
-          <h3>Work Experience</h3>
+          <h3 class="main-title">Work Experience</h3>
 
           <!-- Front-End Developer -->
           <div>
-            <h4>Front-End Developer Freelance</h4>
-            <span>September 2019 - up to now | Ukraine</span>
-            <ul>
+            <h4 class="subtitle-content">Front-End Developer <span class="orange">Freelance</span></h4>
+            <span class="subtitle-h2">September 2019 - up to now | Ukraine</span>
+            <ul class="main-list">
               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               <li>Risus commodo viverra maecenas.</li>
@@ -96,9 +105,9 @@
 
           <!-- Manager Roga Kopyta New-->
           <div>
-            <h4>Manager Roga & Kopyta New</h4>
-            <span>March 2015 - October 2018 | Ukraine</span>
-            <ul>
+            <h4 class="subtitle-content">Manager <span class="orange">Roga & Kopyta New</span></h4>
+            <span class="subtitle-h2">March 2015 - October 2018 | Ukraine</span>
+            <ul class="main-list">
               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.</li>
               <li>Quis ipsum suspendisse ultrices gravida.</li>
               <li>Risus commodo viverra maecenas.</li>              
@@ -107,9 +116,9 @@
 
           <!-- Manager Roga Kopyta LLC -->
           <div>
-            <h4>Manager Roga & Kopyta LLC</h4>
-            <span>June 2014 - February 2015 | Ukraine</span>
-            <ul>
+            <h4 class="subtitle-content">Manager <span class="orange">Roga & Kopyta LLC</span></h4>
+            <span class="subtitle-h2">June 2014 - February 2015 | Ukraine</span>
+            <ul class="main-list">
               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               <li>Quis ipsum suspendisse ultrices gravida.</li>
               <li>Risus commodo viverra maecenas. </li>              
@@ -117,10 +126,10 @@
           </div>
 
           <!-- Education -->
-          <h3>Education</h3>
+          <h3 class="main-title">Education</h3>
           <div>
-            <h4>Kharkiv National University of Radioelectronics</h4>
-            <p>Management</p>
+            <h4 class="subtitle-content-fotter">Kharkiv National University of Radioelectronics</h4>
+            <p class="subtitle">Management</p>
             <span>Septermber 2009 - June 2014 | Ukraine</span>            
           </div>
 
